@@ -1,0 +1,112 @@
+<ion-view view-title="{{ 'settings-text'| translate}}">
+  <ion-content>
+
+    <div class=" margin-top-30 border-top application-theme-color-white height-6">
+      <div class="row application-text-color-gray app-text-font margin-top-15 margin-left-10" translate>register-phone-no-text </div>
+      <div class="row">
+        <div class="col col-offset-50 col-50 application-text-color-blue app-text-font-bold margin-top-10">{{settingsCtrl.hiddenPhoneNumber}}</div>
+      </div>
+    </div>
+
+    <div class="border-top application-theme-color-white">
+      <div class="row">
+        <div class="col col-90 application-text-color-gray app-text-font margin-left-10 margin-top-10" translate>service-text</div>
+      </div>
+
+
+      <div class="row" ng-click="settingsCtrl.PushEnrollmentClick()">
+        <div class="col col-offset-20 col-70">
+          <div class="row height-5 ">
+            <div class="col">
+              <div class="row height-4" >
+                <div class="col col-33 " >
+                  <div ng-class=" { 'center image-size-4 push-not-enrolled-image': settingsCtrl.pushtanValue == false, 'center image-size-4 push-enrolled-image': settingsCtrl.pushtanValue == true }"></div>
+                </div>
+                <div class="col col-66">
+                  <div class="application-background-color service-item-settings">
+                    <div class="row margin-left-10 padding-top-5 application-text-color-blue app-text-font-20-bold" translate> push-text </div>
+                    <div class="row margin-left-10 padding-top-10 application-text-color-gray text-font-16"> {{settingsCtrl.pushtanEnrollment}} </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-10 image-size-2 arrow-right-image margin-top-30"></div>
+      </div>
+
+
+      <div class="row " ng-click="settingsCtrl.OTPEnrollmentClick()">
+        <div class="col col-offset-20 col-70">
+      <div class="row height-5 margin-top-5">
+        <div class="col">
+          <div class="row height-4" >
+            <div class="col col-33 " >
+              <div ng-class=" { 'center image-size-4 otp-not-enrolled-image': settingsCtrl.otptanValue == false, 'center image-size-4 otp-enrolled-image': settingsCtrl.otptanValue == true }"></div>
+            </div>
+            <div class="col col-66">
+              <div class="application-background-color service-item-settings">
+                <div class="row margin-left-10 padding-top-5 application-text-color-blue app-text-font-20-bold" translate> otp-text </div>
+                <div class="row margin-left-10 padding-top-10 application-text-color-gray text-font-16"> {{settingsCtrl.otptanEnrollment}} </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="col col-10 image-size-2 arrow-right-image margin-top-30"></div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="border-top application-theme-color-white height-8">
+
+      <div class="row">
+        <div class="application-text-color-gray app-text-font margin-left-10 margin-top-10" translate>change-language-text</div>
+      </div>
+
+
+      <div class="row margin-top-20">
+        <div class="col col-20">
+          <a ng-class="{'button button-icon image-size-2 checked-image right': settingsCtrl.eng==true, 'button button-icon image-size-2 unchecked-image right': settingsCtrl.eng==false}"
+             ng-click="settingsCtrl.changeLanguage('English')"></a>
+        </div>
+        <div class="col col-30 app-text-font-bold application-text-color-blue">
+          <div class="left margin-left-5 margin-top-5">English</div>
+        </div>
+
+        <div class="col col-20">
+          <a ng-class="{'button button-icon image-size-2 checked-image right': settingsCtrl.ger==true, 'button button-icon image-size-2 unchecked-image right': settingsCtrl.ger==false}"
+             ng-click="settingsCtrl.changeLanguage('German')"></a>
+        </div>
+
+        <div class="col col-30 app-text-font-bold application-text-color-blue">
+          <div class="left margin-left-5 margin-top-5">German</div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="border-top  height-4 imagebutton-div-settings" ng-click="settingsCtrl.ChangePhoneNumber()">
+      <div class="row">
+        <div class="col col-80 application-text-color-gray app-text-font margin-left-10 margin-top-10" translate>change-phone-no-text</div>
+        <div class="col col-10 image-size-2 arrow-right-image margin-top-10 margin-left-25"></div>
+      </div>
+    </div>
+
+    <div class="border-top border-bottom  height-4 imagebutton-div-settings" ng-click="settingsCtrl.DeleteRegistration()">
+      <div class="row">
+        <div class="col col-80 application-text-color-gray app-text-font margin-left-10 margin-top-10" translate>delete-reg-text</div>
+        <div class="col col-10 image-size-2 arrow-right-image margin-top-10  margin-left-25 "></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

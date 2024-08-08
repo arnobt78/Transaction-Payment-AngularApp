@@ -1,0 +1,51 @@
+{
+  "xtan-text": "Home",
+  "enroll-text":"enrolled",
+  "not-enroll-text":"not enrolled",
+  "otp-text": "otpTAN",
+  "push-text": "pushTAN",
+
+
+  "push-tan-enrollment-text": "pushTAN enrollment",
+  "otp-tan-enrollment-text": "otpTAN enrollment",
+  "type-phone-text": "Enter your phone number",
+  "phone-no-invalid-text": "Your phone number is invalid!",
+
+
+  "verification-sent-text":"We've sent you a verification code",
+  "type-verification-text": "Please enter the code",
+
+
+  "verification-success-text":"All done! Thank you!",
+  "push-tan-verified-text":"You have successfully enrolled for pushTAN.",
+  "otp-tan-verified-text":"You have successfully enrolled for otpTAN.",
+  "next-text":"Next",
+
+
+  "otp-tan-bank-text":"Your current otpTAN",
+  "details-text":"Details",
+  "valid-for-otp-text":"This otpTAN is valid for 30 seconds",
+
+  "no-tan-available":"There are currently no pushTAN available.",
+  "push-tan-bank-text":"Your requested pushTAN ",
+  "valid-for-push-text":"This pushTAN is valid for ",
+
+
+  "faq-search-text":"Search",
+  "general-help-text":"General Help",
+  "faq-help-text":"FAQ",
+
+  "about-text":"",
+
+  "register-phone-no-text":"Your phone number",
+  "service-text":"Services",
+  "change-language-text":"Change language",
+  "change-phone-no-text":"Change phone number",
+  "delete-reg-text":"Delete registration",
+
+
+  "about-text": "About",
+  "help-text": "Help",
+  "settings-text": "Settings"
+
+}

@@ -1,0 +1,51 @@
+{
+  "xtan-text": "Home",
+  "enroll-text":"Registriert",
+  "not-enroll-text":"Nicht registriert",
+   "otp-text": "otpTAN",
+  "push-text": "pushTAN",
+
+
+  "push-tan-enrollment-text": "pushTAN Registrierung",
+  "otp-tan-enrollment-text": "otpTAN Registrierung",
+  "type-phone-text": "Bitte geben Sie Ihre Rufnummer ein",
+  "phone-no-invalid-text": "Ihre Rufnummer ist ung&uuml;ltig!",
+
+
+  "verification-sent-text":"Wir haben Ihnen einen Best&auml;tigungscode geschickt.",
+  "type-verification-text": "Bitte geben Sie diesen ein:",
+
+
+  "verification-success-text":"Fertig! Vielen Dank.",
+  "push-tan-verified-text":"Sie haben sich erfolgreich f&uuml;r pushTAN registriert.",
+  "otp-tan-verified-text":"Sie haben sich erfolgreich f&uuml;r otpTAN registriert.",
+  "next-text":"Weiter",
+
+
+  "otp-tan-bank-text":"Ihre otpTAN lautet",
+  "details-text":"Details",
+  "valid-for-otp-text":"Die otpTAN ist g&uuml;ltig f&uuml;r 30 Sekunden",
+
+  "no-tan-available":"Es liegen noch keine pushTAN verfugbar.",
+  "push-tan-bank-text":"Ihre pushTAN lautet",
+  "valid-for-push-text":"Diese pushTAN ist g&uuml;ltig f&uuml;r ",
+
+
+  "faq-search-text":"Suchen",
+  "general-help-text":"Generelle Informationen",
+  "faq-help-text":"FAQ",
+
+  "about-text":"",
+
+  "register-phone-no-text":"Ihre Rufnummer:",
+  "service-text":"Dienste",
+  "change-language-text":"Sprache &auml;ndern",
+  "change-phone-no-text":"Rufnummer &auml;ndern",
+  "delete-reg-text":"Registrierung l&ouml;schen",
+
+
+  "about-text": "Info",
+  "help-text": "Hilfe",
+  "settings-text": "Einstellungen"
+
+}

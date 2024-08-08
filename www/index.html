@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/x_tan_style.css" rel="stylesheet">
+    <link href="css/x_tan_ionic_override_style.css" rel="stylesheet">
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <script src="js/js_utilities/ng-cordova.min.js"></script>
+    <script src="js/js_utilities/angular-translate.min.js"></script>
+    <script src="js/js_utilities/angular-translate-loader-static-files.min.js"></script>
+    <script src="js/js_utilities/angular-sanitize.min.js"></script>
+    <script src="js/js_utilities/angular-filter.min.js"></script>
+    <script src="js/js_utilities/angular-progress-arc.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <script src="js/home_controller.js"></script>
+    <script src="js/otp_tan_controller.js"></script>
+    <script src="js/push_tan_controller.js"></script>
+    <script src="js/help_controller.js"></script>
+    <script src="js/about_controller.js"></script>
+    <script src="js/settings_controller.js"></script>
+    <script src="js/sliding_menu_controller.js"></script>
+
+    <script src="js/number_verify_controller.js"></script>
+    <script src="js/number_registration_controller.js"></script>
+    <script src="js/choose_service_controller.js"></script>
+    <script src="js/verification_success_controller.js"></script>
+
+    <script src="js/services.js"></script>
+
+  </head>
+
+  <body ng-app="xTan">
+  <ion-pane>
+    <ion-nav-bar class="bar-stable" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view></ion-nav-view>
+  </ion-pane>
+  </body>
+</html>

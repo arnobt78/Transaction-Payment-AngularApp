@@ -1,0 +1,64 @@
+<ion-view view-title="{{ 'help-text'| translate}}">
+  <ion-content>
+
+
+    <!--SEARCH BOX-->
+    <div class="margin-top-30 margin-bottom-10">
+      <div class="row">
+        <label class="item item-input input-search-box-help box-shadow">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input  ng-model="helpCtrl.searchTextofHelp" type="text" placeholder="{{ 'faq-search-text' | translate }}" ng-click="helpCtrl.toggleGroup('faqhelp')">
+        </label>
+      </div>
+    </div>
+
+    <div class="margin-left-10 margin-right-10">
+      <!--GENERAL HELP BOX-->
+      <div class="row height-4 application-theme-color-white box-shadow  margin-top-30" ng-click="helpCtrl.toggleGroup('generalhelp')">
+        <div class="col col-80">
+          <div class="margin-top-10 margin-left-5 application-text-color-blue app-text-font-20-bold " translate>general-help-text</div>
+        </div>
+        <div class="col col-20">
+          <div   ng-class="helpCtrl.isGroupShown('generalhelp') ? 'image-size-1-50 arrow-up-image center margin-top-10' : 'image-size-1-50 arrow-down-image center margin-top-10'"></div>
+        </div>
+      </div>
+
+      <!--GENERAL HELP TEXT-->
+      <div class="row application-theme-color-white box-shadow" ng-show="helpCtrl.isGroupShown('generalhelp')">
+        <div class="padding-top-bottom-20 padding-all-20 application-text-color-gray " translate>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+      </div>
+
+      <!--FAQ HELP BOX-->
+      <div class="row height-4 application-theme-color-white margin-top-30 box-shadow " ng-click="helpCtrl.toggleGroup('faqhelp')">
+        <div class="col col-80">
+          <div class="margin-top-10 margin-left-5  application-text-color-blue app-text-font-20-bold" translate> faq-help-text</div>
+        </div>
+        <div class="col col-20">
+          <div   ng-class="helpCtrl.isGroupShown('faqhelp') ? ' image-size-1-50 arrow-up-image center margin-top-10' : ' image-size-1-50 arrow-down-image center margin-top-10'"></div>
+        </div>
+      </div>
+
+      <!--FAQ HELP QUESTIONS-->
+      <div class="row row-no-padding application-background-color box-shadow" ng-show="helpCtrl.isGroupShown('faqhelp')">
+        <div class="padding-top-bottom-20">
+          <ion-list>
+            <ion-item class="custom-list-item margin-bottom-25 box-shadow" ng-repeat="qa in helpCtrl.questionandanswers | filter: {question: helpCtrl.searchTextofHelp}" >
+              <div class="row list-bar">
+                <div class="word-wraps margin-top-10 margin-left-10 margin-right-10 application-text-color-blue app-text-font-bold" translate><b>{{qa.question}}</b></div>
+              </div>
+              <div class="row row-no-padding application-theme-color-white">
+                <div class="application-text-color-blue word-wraps margin-left-10 margin-right-10 padding-top-bottom-20" translate>
+                  {{qa.answer}}
+                </div>
+              </div>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+
+</div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,47 @@
+<ion-view view-title="{{ 'otp-text'| translate}}">
+  <ion-content>
+
+    <div class="row margin-top-30">
+      <div class="center application-text-color-blue app-text-font">{{otpTanCtrl.otpFirstMessage}}</div>
+    </div>
+
+    <div ng-hide="!otpTanCtrl.otptanValue">
+
+      <div class="row margin-top-50">
+        <div class="center text-font-50-bold application-text-color-blue">{{otpTanCtrl.totpValue}}</div>
+      </div>
+
+
+      <div class="row margin-top-50 height-4 application-theme-color">
+        <div class="center margin-top-15 app-text-font application-text-color-white" translate>details-text</div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="center app-text-font application-text-color-blue" translate>valid-for-otp-text</div>
+      </div>
+
+      <div class="row margin-top-10 height-4">
+
+        <div class="center">
+          <progress-arc
+            size="{{ size }}"
+            stroke="{{ stroke }}"
+            stroke-width="{{ strokeWidth }}"
+            complete="progress"
+            background="{{ background }}"
+            counter-clockwise="{{ counterClockwise }}"></progress-arc>
+        </div>
+
+
+      </div>
+
+
+      <div class="row margin-top-40">
+        <div class="center app-text-font-bold application-text-color-blue">00:{{otpTanCtrl.secondForUI}}</div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

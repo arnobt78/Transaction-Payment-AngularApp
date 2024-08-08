@@ -1,0 +1,39 @@
+<ion-view view-title="{{ 'xtan-text' | translate }}">
+
+  <ion-content class="application-background-color">
+
+    <div class="row height-8 margin-top-50">
+      <div class="col">
+        <div class="row height-8 imagebutton-div" ng-click="homeCtrl.ContinueButtonClick('push')">
+          <div class="col col-33 " >
+            <div ng-class=" { 'center image-size-7 push-not-enrolled-image': homeCtrl.pushtanValue == false, 'center image-size-7 push-enrolled-image': homeCtrl.pushtanValue == true }"></div>
+          </div>
+          <div class="col col-66">
+            <div class="application-theme-color-white service-item">
+              <div class="row margin-left-10 padding-top-10 application-text-color-blue app-text-font-20-bold" translate> push-text </div>
+              <div class="row margin-left-10 padding-top-10 application-text-color-gray text-font-16"> {{homeCtrl.pushtanEnrollment}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row height-8 margin-top-30">
+      <div class="col">
+        <div class="row height-8 imagebutton-div" ng-click="homeCtrl.ContinueButtonClick('otp')">
+          <div class="col col-33 " >
+            <div ng-class=" { 'center image-size-7 otp-not-enrolled-image': homeCtrl.otptanValue == false, 'center image-size-7 otp-enrolled-image': homeCtrl.otptanValue == true }"></div>
+          </div>
+          <div class="col col-66">
+            <div class="application-theme-color-white service-item">
+              <div class="row margin-left-10 padding-top-10 application-text-color-blue app-text-font-20-bold" translate> otp-text </div>
+              <div class="row margin-left-10 padding-top-10 application-text-color-gray text-font-16"> {{homeCtrl.otptanEnrollment}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

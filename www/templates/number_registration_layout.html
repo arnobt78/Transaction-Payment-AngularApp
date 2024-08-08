@@ -1,0 +1,90 @@
+<ion-view view-title= {{numberRegistrationCtrl.title}}>
+  <ion-content>
+
+    <div class="row margin-top-30">
+      <div class="center application-text-color-blue app-text-font" translate>type-phone-text</div>
+    </div>
+
+    <div class="row margin-top-20 height-4">
+      <div class="col col-80 center application-text-color-blue app-text-font-20-bold margin-top-5">{{numberRegistrationCtrl.phoneNumber}}</div>
+      <div class="col col-20">
+        <div class="left image-size-2 backspace-image" ng-hide="numberRegistrationCtrl.IsNumberZero()" ng-click="numberRegistrationCtrl.DeleteNumber()"></div>
+      </div>
+    </div>
+
+
+    <!--KEYPAD OF NUMBER-->
+    <div class="row margin-top-30">
+      <div class="col col-offset-10 col-80">
+
+        <div class="row">
+          <div class="col">
+            <div class="image-size-4 number1-image" ng-click="numberRegistrationCtrl.PressNumber(1)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number2-image" ng-click="numberRegistrationCtrl.PressNumber(2)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number3-image" ng-click="numberRegistrationCtrl.PressNumber(3)"></div>
+          </div>
+        </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 number4-image" ng-click="numberRegistrationCtrl.PressNumber(4)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number5-image" ng-click="numberRegistrationCtrl.PressNumber(5)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number6-image" ng-click="numberRegistrationCtrl.PressNumber(6)"></div>
+          </div>
+        </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 number7-image" ng-click="numberRegistrationCtrl.PressNumber(7)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number8-image" ng-click="numberRegistrationCtrl.PressNumber(8)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number9-image" ng-click="numberRegistrationCtrl.PressNumber(9)"></div>
+          </div>
+         </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 cross-image" ng-click="numberRegistrationCtrl.CancelClick()"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number0-image" ng-click="numberRegistrationCtrl.PressNumber(0)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 yes-image" ng-hide="numberRegistrationCtrl.IsNumberComplete()" ng-click="numberRegistrationCtrl.OkClick()"></div>
+          </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!--<div class="row margin-top-30">
+      <div class="col  col-offset-10 col-33">
+        <div class="margin-left-10 button button-main" ng-click=""> Cancel </div>
+      </div>
+
+      <div class="col col-offset-10 col-33">
+        <div class=" button button-main" ng-click=""> Next </div>
+      </div>
+      </div>-->
+
+  </ion-content>
+</ion-view>

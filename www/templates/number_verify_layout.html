@@ -1,0 +1,91 @@
+<ion-view view-title={{numberVerifyCtrl.title}}>
+  <ion-content>
+
+    <div class="row margin-top-30">
+      <div class="center app-text-font application-text-color-blue" translate>verification-sent-text</div>
+    </div>
+
+    <div class="row margin-top-20">
+      <div class="center app-text-font-20-bold application-text-color-blue">{{numberVerifyCtrl.hiddenPhoneNumber}}</div>
+    </div>
+
+    <div class="row margin-top-20">
+      <div class="center app-text-font application-text-color-blue" translate>type-verification-text</div>
+    </div>
+
+    <div class="row margin-top-20 height-4">
+      <div class="col col-offset-33 col-30">
+        <div class="app-text-font-20-bold application-text-color-blue">{{numberVerifyCtrl.verificationCode}}</div>
+      </div>
+      <div class="col col-25 left image-size-2 backspace-image" ng-hide="numberVerifyCtrl.IsNumberZero()" ng-click="numberVerifyCtrl.DeleteNumber()"></div>
+
+    </div>
+
+
+    <!--KEYPAD OF NUMBER-->
+    <div class="row margin-top-20">
+      <div class="col col-offset-10 col-80">
+
+        <div class="row">
+          <div class="col">
+            <div class="image-size-4 number1-image" ng-click="numberVerifyCtrl.PressNumber(1)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number2-image" ng-click="numberVerifyCtrl.PressNumber(2)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number3-image" ng-click="numberVerifyCtrl.PressNumber(3)"></div>
+          </div>
+        </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 number4-image" ng-click="numberVerifyCtrl.PressNumber(4)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number5-image" ng-click="numberVerifyCtrl.PressNumber(5)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number6-image" ng-click="numberVerifyCtrl.PressNumber(6)"></div>
+          </div>
+        </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 number7-image" ng-click="numberVerifyCtrl.PressNumber(7)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number8-image" ng-click="numberVerifyCtrl.PressNumber(8)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number9-image" ng-click="numberVerifyCtrl.PressNumber(9)"></div>
+          </div>
+        </div>
+
+        <div class="row margin-top-10">
+          <div class="col">
+            <div class="image-size-4 cross-image" ng-click="numberVerifyCtrl.CancelClick()"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 number0-image" ng-click="numberVerifyCtrl.PressNumber(0)"></div>
+          </div>
+
+          <div class="col">
+            <div class="image-size-4 yes-image" ng-hide="numberVerifyCtrl.IsNumberComplete()" ng-click="numberVerifyCtrl.OkClick()"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
+

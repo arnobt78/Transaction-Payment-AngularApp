@@ -1,0 +1,61 @@
+<ion-view view-title="{{ 'push-text'| translate}}">
+  <ion-content>
+
+    <div class="row margin-top-30">
+      <div class="center application-text-color-blue app-text-font">{{pushTanCtrl.pushFirstMessage}}</div>
+    </div>
+
+    <div ng-hide="pushTanCtrl.pushtanValue">
+      <div class="row height-8 margin-top-30">
+        <div class="image-size-10 center push-not-available-image"></div>
+      </div>
+    </div>
+
+
+    <div ng-hide="!pushTanCtrl.pushtanValue">
+      <div class="row margin-top-50">
+        <div class="center text-font-50-bold application-text-color-blue">{{pushTanCtrl.generatedPushTan}}</div>
+      </div>
+
+
+      <div class="row margin-top-50 height-4 application-theme-color">
+        <div class="center margin-top-15 app-text-font application-text-color-white">Details</div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="center app-text-font-bold application-text-color-blue">{{pushTanCtrl.pushMessage}}  </div>
+      </div>
+
+      <div class="row margin-top-30">
+        <div class="center app-text-font application-text-color-blue" translate>valid-for-push-text</div>
+      </div>
+
+      <div class="row margin-top-5">
+        <div class="center app-text-font application-text-color-blue">{{pushTanCtrl.timeFromServer}} minutes</div>
+      </div>
+
+      <div class="row margin-top-20 height-4">
+
+        <div class="center">
+          <progress-arc
+            size="{{ size }}"
+            stroke="{{ stroke }}"
+            stroke-width="{{ strokeWidth }}"
+            complete="progress"
+            background="{{ background }}"
+            counter-clockwise="{{ counterClockwise }}"></progress-arc>
+        </div>
+
+
+      </div>
+
+
+      <div class="row margin-top-40">
+        <div class="center app-text-font-bold application-text-color-blue">{{pushTanCtrl.minutesForUI}}:{{ pushTanCtrl.secondsForUI}}</div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
