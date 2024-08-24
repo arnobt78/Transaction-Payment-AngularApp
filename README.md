@@ -5,4 +5,4 @@ Fetch the Credit Card details from the server and showed the expenses, graphs, r
 
 ## keywords
 
-Using Ionic Cordova AngularJS, HTML, CSS, JSON
+Using Ionic Cordova AngularJS, HTML, CSS, JSON, JavaScript, Swift, TypeScript
